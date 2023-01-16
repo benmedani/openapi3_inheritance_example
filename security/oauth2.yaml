@@ -1,0 +1,15 @@
+type: oauth2
+flows:
+  implicit:
+    authorizationUrl: https://my.api.dev/api/oauth/auth
+    scopes:
+      write:tools: modify tooks in your account
+      read:object: read your objects
+  authorizationCode:
+    authorizationUrl: https://my.api.dev/api/oauth/auth
+    tokenUrl: https://my.api.dev/api/oauth/token
+    scopes:
+      write:tools: modify tooks in your account
+      read:object: read your objects
+      create:object: create a object
+      update:object: modify a object

@@ -1,0 +1,11 @@
+Error:
+  $ref: Error.yaml
+
+Object:
+  $ref: Object.yaml
+
+Tool:
+  $ref: Tool.yaml
+  
+WebSite:
+  $ref: WebSite.yaml

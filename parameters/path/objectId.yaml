@@ -1,0 +1,7 @@
+name: objectId
+in: path
+required: true
+description: The id of the object to retrieve
+schema:
+  type: integer
+  format: int32

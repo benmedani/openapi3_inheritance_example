@@ -1,0 +1,9 @@
+title: A Tool
+type: object
+allOf:
+  - $ref: Object.yaml
+  - type: object
+    properties:
+      cost:
+        type: number
+        format: float

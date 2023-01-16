@@ -1,0 +1,5 @@
+description: An single objects
+content:
+  application/json:
+    schema:
+      $ref: ../../schemas/Object.yaml

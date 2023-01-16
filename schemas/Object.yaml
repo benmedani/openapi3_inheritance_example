@@ -1,0 +1,13 @@
+title: An Object.
+type: object
+discriminator:
+  propertyName: objectType
+properties:
+  id:
+    type: integer
+    format: int32
+  name:
+    type: string
+    pattern: ^[x|y|z](.)*$
+  objectType:
+    type: string

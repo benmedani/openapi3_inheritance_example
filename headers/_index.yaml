@@ -1,0 +1,11 @@
+ExpiresAfter:
+  $ref: expiresAfter.yaml
+
+PaginationLimit:
+  $ref: paginationLimit.yaml
+
+PaginationOffset:
+  $ref: paginationOffset.yaml
+
+PaginationTotal:
+  $ref: paginationTotal.yaml

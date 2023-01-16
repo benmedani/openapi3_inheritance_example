@@ -1,0 +1,8 @@
+description: One Object that is either a Tool or a website
+content:
+  application/json:
+    schema:
+      oneOf:
+        - $ref: ../schemas/Tool.yaml
+        - $ref: ../schemas/WebSite.yaml
+      

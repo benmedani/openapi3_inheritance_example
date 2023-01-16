@@ -1,0 +1,48 @@
+get:
+  summary: List all objects
+  operationId: getAllObjects
+  tags:
+    -  object
+  responses:
+    200:
+      $ref: ../../responses/object/ObjectListResponse.yaml
+post:
+  summary: Create a Object
+  operationId: createObject
+  tags:
+    -  object
+  requestBody:
+    $ref: ../../requestBodies/ObjectRequest.yaml
+  responses:
+    201:
+      $ref: ../../responses/CreatedResponse.yaml
+    401:
+      $ref: ../../responses/errors/NotAuthorizedResponse.yaml
+    403:
+      $ref: ../../responses/errors/ForbiddenResponse.yaml
+    default:
+      $ref: ../../responses/errors/UnexpectedErrorResponse.yaml
+    security:
+      oauth2:
+        create:object
+put:
+  summary: Update a Object
+  operationId: updateObject
+  tags:
+    - object
+  requestBody:
+    $ref: ../../requestBodies/ObjectRequest.yaml
+  responses:
+    200:
+      $ref: ../../responses/UpdatedResponse.yaml
+    401:
+      $ref: ../../responses/errors/NotAuthorizedResponse.yaml
+    403:
+      $ref: ../../responses/errors/ForbiddenResponse.yaml
+    404:
+      $ref: ../../responses/errors/NotFoundResponse.yaml
+    default:
+      $ref: ../../responses/errors/UnexpectedErrorResponse.yaml
+  security:
+    oauth2:
+      update:object

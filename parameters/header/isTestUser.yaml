@@ -1,0 +1,6 @@
+name: isTestUser
+in: header
+required: false
+description: if set to true, this signifies this is a TestUser (with possibly elevated parameters etc.)
+schema:
+  type: boolean

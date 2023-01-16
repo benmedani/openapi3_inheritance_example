@@ -1,0 +1,9 @@
+title: A WebSite
+type: object
+allOf:
+  - $ref: ./Object.yaml
+  - type: object
+    properties:
+      url:
+        type: string
+        pattern: ^http(s)?\:\/\/(.*)$

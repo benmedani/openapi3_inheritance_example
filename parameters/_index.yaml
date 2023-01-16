@@ -1,0 +1,14 @@
+# parameters in headers
+isTestUser:
+  $ref: header/isTestUser.yaml
+
+# Parameters in Path
+objectId:
+  $ref: path/objectId.yaml
+
+# Parameters in Queries
+collectionOffset:
+  $ref: query/collectionOffset.yaml
+
+limit:
+  $ref: query/limit.yaml

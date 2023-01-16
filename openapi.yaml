@@ -1,0 +1,37 @@
+openapi: 3.0.3
+info:
+  title: openAPI Tutorials - Inheritance Example
+  version: 0.1.1
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Max Mustermann
+servers:
+  - url: hab.ich.net
+tags:
+  - name: object
+    description: Everything about objects.
+paths:
+  /object:
+    $ref: paths/object/objects.yaml
+  /object/{objectId}:
+    $ref: paths/object/objectById.yaml
+components:
+  headers:
+    $ref: headers/_index.yaml
+  parameters:
+    $ref: parameters/_index.yaml
+  schemas:
+    $ref: schemas/_index.yaml
+  requestBodies:
+    $ref: requestBodies/_index.yaml
+  responses:
+    $ref: responses/_index.yaml
+  securitySchemes:
+    $ref: security/_index.yaml
+
+
+
+
+

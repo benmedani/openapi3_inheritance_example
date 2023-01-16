@@ -1,0 +1,34 @@
+# ErrorResponses
+BadRequestResponse:
+  $ref: errors/BadRequestResponse.yaml
+
+ForbiddenResponse:
+  $ref: errors/ForbiddenResponse.yaml
+
+NotAuthorizedResponse:
+  $ref: errors/NotAuthorizedResponse.yaml
+
+NotFoundResponse:
+  $ref: errors/NotFoundResponse.yaml
+
+UnexpectedErrorResponse:
+  $ref: errors/UnexpectedErrorResponse.yaml
+
+# ObjectResponses:
+AggregatedObjectResponse:
+  $ref: object/AggregatedObjectResponse.yaml
+
+ObjectListResponse:
+  $ref: object/ObjectListResponse.yaml
+
+ObjectResponse:
+  $ref: object/ObjectResponse.yaml
+
+CreatedResponse:
+  $ref: CreatedResponse.yaml
+
+DeletedResponse:
+  $ref: DeletedResponse.yaml
+
+UpdatedResponse:
+  $ref: UpdatedResponse.yaml

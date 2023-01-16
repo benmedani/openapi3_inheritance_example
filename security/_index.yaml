@@ -1,0 +1,8 @@
+api_key:
+  $ref: ./apiKey.yaml
+basic_auth:
+  $ref: ./basicAuth.yaml
+bearer:
+  $ref: ./bearer.yaml
+ouauth2:
+  $ref: ./oauth2.yaml

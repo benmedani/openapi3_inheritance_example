@@ -1,0 +1,34 @@
+get:
+  summary: Show a single Object
+  operationId: getObjectById
+  tags:
+    -  Object
+  parameters:
+    - $ref: ../../parameters/path/objectId.yaml
+  responses:
+    200:
+      $ref: ../../responses/ObjectResponse.yaml
+    403:
+      $ref: ../../responses/errors/ForbiddenResponse.yaml
+    404:
+      $ref: ../../responses/errors/NotFoundResponse.yaml
+    default:
+      $ref: ../../responses/errors/UnexpectedErrorResponse.yaml
+delete:
+  summary: Delete a object
+  operationId: deleteObject
+  tags:
+    - object
+  parameters:
+    - $ref: ../../parameters/path/objectId.yaml
+  responses:
+    204:
+      $ref: ../../responses/DeletedResponse.yaml
+    401:
+      $ref: ../../responses/errors/NotAuthorizedResponse.yaml
+    403:
+      $ref: ../../responses/errors/ForbiddenResponse.yaml
+    404:
+      $ref: ../../responses/errors/NotFoundResponse.yaml
+    default:
+      $ref: ../../responses/errors/UnexpectedErrorResponse.yaml

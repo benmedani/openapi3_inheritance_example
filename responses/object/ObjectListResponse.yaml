@@ -1,0 +1,7 @@
+description: An array of Objects
+content:
+  application/json:
+    schema:
+      type: array
+      items:
+        $ref: ../../schemas/Object.yaml

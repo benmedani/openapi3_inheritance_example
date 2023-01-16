@@ -1,0 +1,6 @@
+description: An object in a request
+required: true
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/Object.yaml

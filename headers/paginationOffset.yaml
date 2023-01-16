@@ -1,0 +1,4 @@
+description: Pagination offset.
+schema:
+  type: integer
+  format: int32
